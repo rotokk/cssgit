@@ -7,31 +7,54 @@
         list-style-type: none;
         padding: 0px;
         margin: 0px;
-        width: 150px;
+        width: 250px;
         font-family: Arial, Helvetica, sans-serif;
       }
       li a {
-        border: 1px solid white;
-      }
-      li a {
+        border: 1px solid rgb(184, 63, 184);
         color: white;
-        background-color: rgb(90, 81, 213);
+        background-color: rgb(94, 27, 157);
         display: block;
         text-decoration: none;
-        padding: 20px;
+        padding: 30px;
       }
+
       li a:hover {
-        background-color: rgb(180, 204, 179);
-        display: block;
+        background: #ce5937;
+        background: -moz-linear-gradient(
+          -45deg,
+          #ce5937 0%,
+          #1c6ea4 50%,
+          #c59237 100%
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          #ce5937 0%,
+          #1c6ea4 50%,
+          #c59237 100%
+        );
+        background: linear-gradient(
+          135deg,
+          #ce5937 0%,
+          #1c6ea4 50%,
+          #c59237 100%
+        );
+      }
+
+      #primero a {
+        border-radius: 10px 10px 0px 0px;
+      }
+      #ultimo a {
+        border-radius: 0px 0px 10px 10px;
       }
     </style>
   </head>
   <body>
     <ul>
-      <li><a href="http://www.elpais.es">elpais</a></li>
+      <li id="primero"><a href="http://www.elpais.es">elpais</a></li>
       <li><a href="http://www.elmundo.es">elmundo</a></li>
       <li><a href="http://www.lavanguardia.com">la vanguardia</a></li>
-      <li><a href="http://www.elcorreo.com">elcorreo</a></li>
+      <li id="ultimo"><a href="http://www.elcorreo.com">elcorreo</a></li>
     </ul>
   </body>
 </html>
